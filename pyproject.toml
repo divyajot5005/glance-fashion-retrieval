@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glance-fashion-retrieval"
+version = "1.0.0"
+description = "Attribute- and context-aware multimodal fashion retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "torch>=2.2",
+  "transformers>=4.49",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+faiss = ["faiss-cpu>=1.8"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+glance-retrieval = "glance_retrieval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

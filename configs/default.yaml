@@ -1,0 +1,18 @@
+models:
+  fashion: patrickjohncyh/fashion-clip
+  context: google/siglip2-base-patch16-224
+runtime:
+  device: auto
+  batch_size: 32
+  use_amp: true
+index:
+  crop_views: [full, upper, lower, center, wide_center]
+  candidate_pool: 200
+  backend: numpy  # set to faiss for large collections
+  faiss_hnsw_m: 32
+retrieval:
+  fashion_global_weight: 0.35
+  fashion_atomic_weight: 0.65
+  softmin_temperature: 0.08
+  metadata_boost: 0.05
+
