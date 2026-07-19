@@ -2,6 +2,9 @@
 
 A modular image search system that retrieves fashion scenes from natural-language queries. It is deliberately stronger than a one-vector, vanilla-CLIP baseline:
 
+**Public repository:** https://github.com/divyajot5005/glance-fashion-retrieval  
+**Submission report:** [Glance ML Internship Assignment Solution](docs/Glance_ML_Internship_Assignment_Solution.pdf)
+
 - `FashionCLIP` supplies domain-specific garment and attribute semantics.
 - `SigLIP 2` supplies broader scene, activity, and environment semantics.
 - Five deterministic image views preserve local evidence without requiring an object detector.

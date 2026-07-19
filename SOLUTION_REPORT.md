@@ -133,13 +133,13 @@ Install with `pip install -e ".[dev,faiss]"`, build a JSONL manifest, run `glanc
 
 The repository also contains a 90-second reviewer guide, model card, data card, Dockerfile, Makefile, lightweight GitHub Actions workflow, configuration validation, dataset audit, ablation benchmark, and self-contained HTML result gallery. The tests avoid downloading model weights by injecting deterministic fake encoders, so core ML logic is cheap to verify in CI.
 
-The packaged codebase accompanies this report. A public GitHub URL was not supplied and is therefore marked **TBD after upload** rather than fabricated.
+The public codebase is available at https://github.com/divyajot5005/glance-fashion-retrieval. The repository and PDF should remain pinned to the same submission commit.
 
 ## Submission checklist
 
 - Replace placeholder relevance IDs with frozen annotations and run the data audit.
 - Run the five-way benchmark and add the generated metric table plus 2-3 representative result galleries.
-- Upload the repository, replace the TBD GitHub URL, and verify a clean-machine install.
+- Verify the public repository URL and a clean-machine install.
 - Keep the PDF and code at the same commit; tag the submission commit.
 - Explain one success, one failure, one ablation, and why soft-min beats mean for conjunctive queries.
 
